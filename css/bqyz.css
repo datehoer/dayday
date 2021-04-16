@@ -1,0 +1,20 @@
+/*文章底部版权*/
+.cpright {
+    padding: 10px;
+    background: rgba(220, 220, 220, 0.1);
+    margin: 8px 0;
+    font-size: 13px;
+    border-left: 3px #f07aab96 solid;
+    position: relative;
+    z-index: 1;
+    font-family: "Microsoft Yahei","Droid Serif",Georgia,"Times New Roman",STHeiti,serif;
+    text-align: left;
+}
+.cpright a:hover {
+    color: #ff7979e8!important;
+}
+.cpright a {
+    color: #999!important;
+    margin: 4px;
+    border-bottom: 0px solid #999!important;
+}
