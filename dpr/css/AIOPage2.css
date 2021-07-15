@@ -1,0 +1,86 @@
+.page2 .logo {
+  position: relative;
+  text-align: center;
+  z-index: 99;
+}
+.page2 .logo img {
+  width: 70px;
+}
+.page2 #PG2 {
+  background-color: #D6F3C9;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+}
+.page2 #PG2 .jss {
+  height: 60%;
+}
+.page2 #PG2 .jss .js1,
+.page2 #PG2 .jss .js2,
+.page2 #PG2 .jss .js3 {
+  margin-top: 95px;
+  padding: 20px;
+  color: #791E0E;
+  font-weight: bold;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 200px;
+}
+.page2 #PG2 .jss .js1 .text,
+.page2 #PG2 .jss .js2 .text,
+.page2 #PG2 .jss .js3 .text {
+  font-size: 23px;
+  line-height: 35px;
+  height: 80%;
+}
+.page2 #PG2 .jss .js1 .yy,
+.page2 #PG2 .jss .js2 .yy,
+.page2 #PG2 .jss .js3 .yy {
+  font-size: 18px;
+}
+.page2 #PG2 .jss .js1 .yy .last,
+.page2 #PG2 .jss .js2 .yy .last,
+.page2 #PG2 .jss .js3 .yy .last {
+  height: 20%;
+  text-align: right;
+}
+.page2 #PG2 .jss .js1 {
+  background-image: url(../img/zrda.png);
+}
+.page2 #PG2 .jss .js2 {
+  display: none;
+  background-image: url(../img/jcda.png);
+}
+.page2 #PG2 .jss .js3 {
+  display: none;
+  background-image: url(../img/btda.png);
+}
+.page2 #PG2 ul {
+  display: flex;
+}
+.page2 #PG2 ul .photo1 {
+  box-shadow: 0 0 5px gold;
+}
+.page2 #PG2 ul li {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.page2 #PG2 ul li img {
+  width: 100px;
+  height: 100px;
+  display: block;
+}
+.page2 #PG2 .tips {
+  display: block;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+/*# sourceMappingURL=AIOPage2.css.map */

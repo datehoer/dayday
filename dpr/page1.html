@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>page1</title>
+    <link rel="stylesheet" href="./css/clear.css">
+    <link rel="stylesheet" href="css/page1.css">
+</head>
+<body>
+    <div class="logo"><img src="./img/logo.png" alt=""></div>
+    <div class="music">
+        <img src="./img/musiclogo.png" alt="">
+    </div>
+    <div id="all">
+        <div class="ddpr">
+            <img src="./img/dpr.png" alt="">
+        </div>
+        <div class="title">
+            <p>聊美食</p>
+            <p>我们是专业的</p>
+        </div>
+        <div class="circles">
+            <div class="circle1">
+                <div><img src="./img/jiu.png" alt=""></div>
+            </div>
+            <div class="circle2">
+                <div><img src="./img/bajiao.png" alt=""></div>
+            </div>
+            <div class="circle3">
+                <div><img src="./img/choujiang.png" alt=""></div>
+            </div>
+            <div class="circle4">
+                <div><img src="./img/bingtang.png" alt=""></div>
+            </div>
+        </div>
+        <div class="tips">
+            <div>了解做法</div>
+            <div>
+                <img src="./img/xia.png" alt=""><br>
+                <img src="./img/xia.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+<script>
+    let all = document.getElementById('all');
+    let scnHeight = document.documentElement.clientHeight;
+    let scnWidth = document.documentElement.clientWidth;
+    let pagey1 = 0
+    let pagey2 = 0
+    let bgm = document.querySelector('.music')
+    all.style.height = scnHeight+"px"
+    all.style.width = scnWidth+"px"
+
+    document.body.addEventListener('touchstart',touchStart)
+    document.body.addEventListener('touchmove',touchMove)
+    /*
+     * 屏幕滑动事件
+     * 使用屏幕滑动事件来判断上滑与下滑
+     */
+    function touchStart(event) {
+        event = event || window.event
+        pagey1 = event.touches[0].pageY
+    }
+    function touchMove(event) {
+        event = event || window.event
+        pagey2 = event.touches[0].pageY
+        console.log(event.touches[0])
+        if((pagey1 - pagey2) > 50) {
+            window.location.href = './page2.html'
+        }
+    }
+    bgm.onclick = function (){
+        alert(1)
+    }
+</script>
+</html>

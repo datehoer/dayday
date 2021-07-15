@@ -1,0 +1,61 @@
+.page3 {
+  position: relative;
+}
+.page3 #PG3 {
+  background-image: url("../img/p4bg.png");
+  background-size: 100% 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  z-index: -1;
+  color: #791E0E;
+}
+.page3 #PG3 .text {
+  font-weight: bold;
+  font-size: 16px;
+  margin: 30% 30px 0 30px;
+}
+.page3 #PG3 .text div:first-child {
+  text-align: center;
+  font-size: 23px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.page3 #PG3 .text div:not(:first-child) {
+  text-indent: 2em;
+  line-height: 28px;
+}
+.page3 #PG3 .text div:last-child {
+  text-align: right;
+}
+.page3 #PG3 .img {
+  text-align: center;
+}
+.page3 #PG3 .img ul {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.page3 #PG3 .img ul li img {
+  bottom: 0;
+  width: 40%;
+  animation: 3s yan infinite;
+}
+.page3 #PG3 .img .dpr {
+  width: 200px;
+}
+@keyframes yan {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.3, 0.3);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=AIOPage3.css.map */

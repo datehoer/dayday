@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #all{
+            background-image: url(./img/loadbg.png);
+            background-size: 100% 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .loadLayout{
+            text-align: center;
+        }
+        .loadLayout>img{
+            width: 12em;
+        }
+        .qi{
+            flex-basis: 100%;
+            justify-content: center;
+            display: flex;
+            align-items: flex-end;
+        }
+        .qi>img{
+            animation: 4s qiAnimate .5s linear infinite;
+        }
+        .qi>img:not(:last-child){
+            margin-right: 35px;
+        }
+        @keyframes qiAnimate {
+            25%{transform: scale(.3,.3);opacity: 20%}
+            50%{opacity: 60%}
+            75%{transform: scale(.3,.3);opacity: 20%}
+        }
+    </style>
+</head>
+<body>
+    <div id="all">
+
+        <div class="loadLayout">
+            <div class="qi">
+                <img src="./img/qi1.png" alt="" style="width: 8px;">
+                <img src="./img/qi2.png" alt="" style="width: 10px;">
+                <img src="./img/qi3.png" alt="" style="width: 8px;">
+            </div>
+            <img src="./img/dpr.png" alt="">
+            <div>
+                <p>loading<span class="points"></span></p>
+                <p><span class="schedule"></span>%</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+        //设置满屏
+        let all = document.getElementById('all');
+        let scnHeight = document.documentElement.clientHeight;
+        all.style.height = scnHeight+"px"
+
+        let schedule = document.querySelector('.schedule')
+        let loadTime = 0
+        let points = document.querySelector('.points')
+
+        //模拟加载进度
+        setInterval(function (){
+            loadTime++
+            schedule.innerHTML = `${loadTime}`
+            if(loadTime >= 100){
+                window.location.href = "./page1.html"
+            }
+        },70)
+
+
+        //loading的点
+        let num = 0
+        setInterval(function (){
+            num++
+            if(num === 1){
+                points.innerHTML = `.`
+            }else if(num === 2){
+                points.innerHTML = `..`
+            }else if(num === 3){
+                points.innerHTML = `...`
+                num = 0
+            }
+        },1000)
+</script>
+</html>

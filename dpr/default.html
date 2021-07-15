@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/clear.css">
+    <link rel="stylesheet" href="./css/AIOPage1.css">
+    <link rel="stylesheet" href="./css/AIOPage2.css">
+    <link rel="stylesheet" href="./css/AIOPage3.css">
+    <style>
+        @font-face {
+            font-family: dpr;
+            src: url("font/default.otf");
+        }
+        body{
+            font-family: dpr,sans-serif;
+        }
+        #all{
+            overflow: hidden;
+            position: relative;
+        }
+        #kj{
+            position: absolute;
+            top: 0;
+            transition: 0.5s ease-in-out;
+        }
+        #music{
+            position: fixed;
+            right: 10px;
+            top: 10px;
+            z-index: 999;
+            width: 30px;
+            height: 30px;
+        }
+
+        @keyframes zhuan {
+            0%{transform: rotate(0deg)}
+            50%{transform: rotate(180deg)}
+            100%{transform: rotate(360deg)}
+        }
+    </style>
+</head>
+<body>
+<div id="music">
+    <img src="./img/musiclogo.png" alt="">
+    <video src="./audio/bgm.mp3"></video>
+</div>
+    <div id="all">
+
+        <div id="kj">
+            <div class="page1">
+                <div class="logo"><img src="./img/logo.png" alt=""></div>
+                <div id="PG1">
+                    <div class="ddpr">
+                        <img src="./img/dpr.png" alt="">
+                    </div>
+                    <div class="title">
+                        <p><span>|</span>聊美食</p>
+                        <p><span></span>我们是专业的</p>
+                    </div>
+                    <div class="circles">
+                        <div class="circle1">
+
+                        </div>
+                        <div class="circle2">
+                            <div><img src="./img/bajiao.png" alt=""></div>
+                            <div><img src="./img/jiu.png" alt=""></div>
+                            <div><img src="./img/bingtang.png" alt=""></div>
+                        </div>
+                        <div class="circle3">
+
+                        </div>
+                        <div class="circle4">
+                            <div><img src="./img/choujiang.png" alt=""></div>
+
+                        </div>
+                    </div>
+                    <div class="tips">
+                        <div>了解做法</div>
+                        <div>
+                            <img src="./img/xia.png" alt=""><br>
+                            <img src="./img/xia.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page2">
+                <div class="logo"><img src="./img/logo.png" alt=""></div>
+                <div id="PG2" >
+                    <div class="jss">
+                        <div class="js1">
+                            <div class="text">
+                                猪肉焯水，<br>
+                                切成大小适宜的方块。
+                            </div>
+                            <div class="yy">
+                                <div>肥瘦适当、层层肥瘦相间，比例接近。</div>
+                                <div class="last">——五花肉挑选经验</div>
+                            </div>
+                        </div>
+                        <div class="js2">
+                            <div class="text">
+                                用铁锅或者砂锅放入葱、<br>
+                                姜、八角、肉皮朝下放入<br>
+                                五花肉，倒入黄酒没过食<br>
+                                材。
+                            </div>
+                            <div class="yy">
+                                <div>颗粒饱满、整齐完整、呈棕红色、夹边缝隙较大。</div>
+                                <div class="last">——八角挑选经验</div>
+                            </div>
+                        </div>
+                        <div class="js3">
+                            <div class="text">
+                                放入冰糖、老抽、盐大火<br>
+                                煮开后，小火慢炖1.5小时<br>
+                                大火收汁出锅！
+                            </div>
+                            <div class="yy">
+                                <div>晶体光泽、晶粒均匀不含杂质，呈白色或淡黄色半透明</div>
+                                <div class="last">——冰糖挑选经验</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <ul>
+                            <li id="zr"><img src="./img/zr.png" alt="" class="photo1"></li>
+                            <li id="jc"><img src="./img/jc.png" alt="" class="photo2"></li>
+                            <li id="bt"><img src="./img/bt.png" alt="" class="photo3"></li>
+                        </ul>
+                    </div>
+                    <div class="tips">
+                        <div>
+                            <img src="./img/xia.png" alt=""><br>
+                            <img src="./img/xia.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page3">
+                <div id="PG3">
+                    <div class="text">
+                        <div>
+                            《猪肉颂》
+                        </div>
+                        <div>
+                            净洗铛，少著水，柴头罨烟焰不起。待他自熟莫催他，火候足时他自美。黄州好猪肉，价贱如泥土。
+                        </div>
+                        <div>
+                            贵者不肯吃，贫者不解煮，早晨起来打两碗，饱得自家君莫管。
+                        </div>
+                        <div>——苏轼</div>
+                    </div>
+                    <div class="img">
+                        <ul>
+                            <li><img src="./img/qi1.png" alt=""></li>
+                            <li><img src="./img/qi3.png" alt=""></li>
+                            <li><img src="./img/qi2.png" alt=""></li>
+                        </ul>
+                        <img src="./img/dpr.png" alt="" class="dpr">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const bodyHeight = document.documentElement.clientHeight
+    const bodyWidth = document.documentElement.clientWidth
+    const body = document.body
+    const all = document.querySelector('#all')
+    const kj = document.querySelector('#kj')
+    let pages = document.querySelectorAll('#kj>div')
+    let toPageStatus = false
+    let nowPageIndex = 0
+    const ANI_TIME = 500
+
+
+    for(let i = 0;i < pages.length;i++){
+        pages[i].style.height = bodyHeight+'px'
+        pages[i].style.width = bodyWidth+'px'
+    }
+
+    all.style.height = bodyHeight+'px'
+    all.style.width = bodyWidth+'px'
+    /*
+     * 屏幕滑动事件
+     * 使用屏幕滑动事件来判断上滑与下滑
+     */
+    body.addEventListener('touchstart',touchStart)
+    body.addEventListener('touchmove',touchMove)
+    body.addEventListener('touchend',touchEnd)
+
+
+    let touchY = 0
+    let spanY = 0
+
+    function touchStart(event) {
+        touchY = event.touches[0].pageY
+    }
+    function touchMove(event) {
+        event.preventDefault()
+    }
+
+    function touchEnd(event){
+        spanY = event.changedTouches[0].pageY - touchY
+        if(spanY < -50 && toPageStatus === false){
+            toPage(true)
+        }else if(spanY > 50 && toPageStatus === false){
+            toPage(false)
+        }
+        function toPage(isNext){
+            toPageStatus = true
+
+            let pageInfo
+            switch (isNext){
+                case true:
+                    if(!(nowPageIndex+1 === pages.length)){
+                        pageInfo = -bodyHeight
+                        nowPageIndex++
+                    console.log(nowPageIndex);
+                    }
+                    break
+                case false:
+                    if(!(nowPageIndex-1 < 0)){
+                        pageInfo = bodyHeight
+                        nowPageIndex--
+                    console.log(nowPageIndex);
+                    }
+                    break
+            }
+            kj.style.top = kj.offsetTop + pageInfo + 'px'
+            setTimeout(()=>toPageStatus = false,ANI_TIME)
+        }
+    }
+</script>
+<script src="./js/musicControl.js"></script>
+<script src="./js/AIOPage1.js"></script>
+<script src="./js/AIOPage2.js"></script>
+<script src="./js/AIOPage3.js"></script>
+</html>

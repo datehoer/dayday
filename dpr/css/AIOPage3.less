@@ -1,0 +1,57 @@
+.page3{
+  position: relative;
+  #PG3{
+    background-image: url("../img/p4bg.png");
+    background-size: 100% 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    z-index: -1;
+    color: #791E0E;
+    .text{
+      font-weight: bold;
+      font-size: 16px;
+      margin: 30% 30px 0 30px;
+      div:first-child{
+        text-align: center;
+        font-size: 23px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      div:not(:first-child){
+        text-indent: 2em;
+        line-height: 28px;
+      }
+      div:last-child{
+        text-align: right;
+      }
+    }
+    .img{
+      text-align: center;
+      ul{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        li{
+          img{
+            bottom: 0;
+            width: 40%;
+            animation: 3s yan infinite;
+          }
+        }
+      }
+      .dpr{
+        width: 200px;
+      }
+    }
+  }
+
+  @keyframes yan {
+    0%{opacity: 1}
+    50%{transform: scale(.3,.3)}
+    100%{opacity: 0}
+  }
+}

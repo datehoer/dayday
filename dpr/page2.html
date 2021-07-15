@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>page2</title>
+    <link rel="stylesheet" href="./css/clear.css">
+    <link rel="stylesheet" href="./css/page2.css">
+</head>
+<body>
+    <div class="logo"><img src="./img/logo.png" alt=""></div>
+    <div class="music">
+    <img src="./img/musiclogo.png" alt="">
+    </div>
+    <div id="all">
+        <div class="jss">
+            <div class="js1">
+                <div class="text">
+                    猪肉焯水，<br>
+                    切成大小适宜的方块。
+                </div>
+                <div class="yy">
+                    <div>肥瘦适当、层层肥瘦相间，比例接近。</div>
+                    <div class="last">——五花肉挑选经验</div>
+                </div>
+            </div>
+            <div class="js2">
+                <div class="text">
+                    用铁锅或者砂锅放入葱、<br>
+                    姜、八角、肉皮朝下放入<br>
+                    五花肉，倒入黄酒没过食<br>
+                    材。
+                </div>
+                <div class="yy">
+                    <div>颗粒饱满、整齐完整、呈棕红色、夹边缝隙较大。</div>
+                    <div class="last">——八角挑选经验</div>
+                </div>
+            </div>
+            <div class="js3">
+                <div class="text">
+                    放入冰糖、老抽、盐大火<br>
+                    煮开后，小火慢炖1.5小时<br>
+                    大火收汁出锅！
+                </div>
+                <div class="yy">
+                    <div>晶体光泽、晶粒均匀不含杂质，呈白色或淡黄色半透明</div>
+                    <div class="last">——冰糖挑选经验</div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li id="zr"><img src="./img/zr.png" alt=""></li>
+                <li id="jc"><img src="./img/jc.png" alt=""></li>
+                <li id="bt"><img src="./img/bt.png" alt=""></li>
+            </ul>
+        </div>
+        <div class="tips">
+            <div>
+                <img src="./img/xia.png" alt=""><br>
+                <img src="./img/xia.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let all = document.getElementById('all')
+    let scnHeight = document.documentElement.clientHeight
+    all.style.height = `${scnHeight}px`
+    let zr = document.getElementById('zr')
+    let jc = document.getElementById('jc')
+    let bt = document.getElementById('bt')
+    zr.onclick = function (){
+        document.querySelector('.js1').style.display = 'block'
+        document.querySelector('.js2').style.display = 'none'
+        document.querySelector('.js3').style.display = 'none'
+    }
+    jc.onclick = function (){
+        document.querySelector('.js1').style.display = 'none'
+        document.querySelector('.js2').style.display = 'block'
+        document.querySelector('.js3').style.display = 'none'
+    }
+    bt.onclick = function (){
+        document.querySelector('.js1').style.display = 'none'
+        document.querySelector('.js2').style.display = 'none'
+        document.querySelector('.js3').style.display = 'block'
+    }
+
+    document.body.addEventListener('touchstart',touchStart)
+    document.body.addEventListener('touchmove',touchMove)
+    /*
+     * 屏幕滑动事件
+     * 使用屏幕滑动事件来判断上滑与下滑
+     */
+    function touchStart(event) {
+        event = event || window.event
+        pagey1 = event.touches[0].pageY
+    }
+    function touchMove(event) {
+        event = event || window.event
+        pagey2 = event.touches[0].pageY
+        console.log(event.touches[0])
+        if((pagey1 - pagey2) > 50) {
+            window.location.href = './page3.html'
+        }
+        if((pagey1 - pagey2) < -50) {
+            window.location.href = './page1.html'
+        }
+    }
+</script>
+</html>

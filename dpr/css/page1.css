@@ -1,0 +1,195 @@
+.logo {
+  text-align: center;
+}
+.logo img {
+  width: 70px;
+}
+.music {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+#all {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-color: #D5F3C9;
+  overflow: hidden;
+}
+#all .ddpr {
+  position: absolute;
+  right: -25%;
+  top: 35%;
+}
+#all .ddpr img {
+  width: 300px;
+}
+#all .title {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+}
+#all .title p {
+  color: #711C0D;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 40px;
+}
+#all .circles {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  z-index: -1;
+  right: -70%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+#all .circles .circle1 {
+  border: 3px dashed #967E62;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  animation: 8s rtt linear infinite;
+  border-radius: 5000px;
+}
+#all .circles .circle1 > div {
+  width: 100px;
+  height: 100px;
+  animation: 8s zhuan linear infinite;
+  position: absolute;
+}
+#all .circles .circle1 img {
+  width: 100px;
+  height: 100px;
+}
+#all .circles .circle1 > div {
+  left: 0;
+  right: 0;
+  top: -50px;
+  margin: auto;
+}
+#all .circles .circle2 {
+  border: 2px dashed #967E62;
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  animation: 8s rtt linear infinite;
+  border-radius: 5000px;
+}
+#all .circles .circle2 > div {
+  width: 100px;
+  height: 100px;
+  animation: 8s zhuan linear infinite;
+  position: absolute;
+}
+#all .circles .circle2 img {
+  width: 100px;
+  height: 100px;
+}
+#all .circles .circle2 > div {
+  top: 0;
+  bottom: 0;
+  left: -50px;
+  margin: auto;
+}
+#all .circles .circle3 {
+  border: 1px dotted #967E62;
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  animation: 8s rtt linear infinite;
+  border-radius: 5000px;
+}
+#all .circles .circle3 > div {
+  width: 100px;
+  height: 100px;
+  animation: 8s zhuan linear infinite;
+  position: absolute;
+}
+#all .circles .circle3 img {
+  width: 100px;
+  height: 100px;
+}
+#all .circles .circle3 > div {
+  top: 0;
+  bottom: 0;
+  right: -50px;
+  margin: auto;
+}
+#all .circles .circle4 {
+  border: 1px solid #967E62;
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  animation: 8s rtt linear infinite;
+  border-radius: 5000px;
+}
+#all .circles .circle4 > div {
+  width: 100px;
+  height: 100px;
+  animation: 8s zhuan linear infinite;
+  position: absolute;
+}
+#all .circles .circle4 img {
+  width: 100px;
+  height: 100px;
+}
+#all .circles .circle4 > div {
+  left: 0;
+  right: 0;
+  bottom: -50px;
+  margin: auto;
+}
+#all .tips {
+  display: block;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+@keyframes rtt {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes zhuan {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=page1.css.map */
